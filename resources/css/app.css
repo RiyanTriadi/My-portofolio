@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+  --color-olive-50: #F5F6EF;
+  --color-olive-100: #EBECDF;
+  --color-olive-200: #D7D9BF;
+  --color-olive-300: #C3C69F;
+  --color-olive-400: #AFB47E;
+  --color-olive-500: #9BA15E;
+  --color-olive-600: #7C814B;
+  --color-olive-700: #5D6039;
+  --color-olive-800: #3E4026;
+  --color-olive-900: #1F2013;
+  --color-olive-950: #16160D;
+}
+
