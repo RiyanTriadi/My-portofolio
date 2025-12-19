@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     @vite('resources/css/app.css')
 </head>
-<body class="text-olive-100 bg-olive-200">
+<body class="text-olive-100 bg-olive-700">
     @include('components.navbar')
     <main>
         @yield('content')
