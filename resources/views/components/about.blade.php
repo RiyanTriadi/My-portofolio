@@ -1,16 +1,15 @@
-<div class="hero min-h-screen text-olive-800">
-  <div class="hero-content flex-col lg:flex-row max-w-300">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-      class="max-w-md rounded-lg shadow-2xl"
-    />
-    <div>
-      <h1 class="text-5xl font-bold">Riyan Triadi</h1>
-      <p class="py-6">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
-      </p>
-      <button class="btn btn-primary">Get Started</button>
+<figure id="about" class="diff h-screen z-1" tabindex="0">
+    <div class="diff-item-1" role="img" tabindex="0">
+        <div class="bg-olive-600 text-olive-100 grid place-content-center ">
+          <h1 class="text-7xl font-black">About Me</h1>
+
+        </div>
     </div>
-  </div>
-</div>
+    <div class="diff-item-2" role="img">
+        <div class="bg-olive-900 grid place-content-center ">
+          <h1 class="text-7xl font-black">About Me</h1>
+
+        </div>
+    </div>
+    <div class="diff-resizer"></div>
+</figure>
