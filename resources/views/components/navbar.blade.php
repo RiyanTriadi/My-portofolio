@@ -1,7 +1,7 @@
-<nav class="w-screen bg-transparent shadow-sm flex justify-center fixed">
+<nav class="w-screen bg-transparent backdrop-blur-sm shadow-sm flex justify-center fixed z-40">
     <div class="navbar w-300">
         <div class="flex-1">
-            <a class="text-xl" href="#home">Riyan Triadi</a>
+            <a class="text-xl font-black" href="#home">RIYAN TRIADI</a>
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1">
