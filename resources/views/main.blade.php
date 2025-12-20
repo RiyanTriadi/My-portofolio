@@ -5,7 +5,7 @@
 @section('content')
     <x-hero/>
     <x-about/>
-    <x-skills/>
+    <x-skills :frontendStack="$frontendStack" :backendStack="$backendStack" :dbStack="$dbStack"/>
     <x-projects/>
     <x-contact/>
 @endsection
