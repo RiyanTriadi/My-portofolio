@@ -1,5 +1,4 @@
 @import 'tailwindcss';
-@plugin "daisyui";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -18,5 +17,8 @@
   --color-olive-800: #3E4026;
   --color-olive-900: #1F2013;
   --color-olive-950: #16160D;
+
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-sans: "Ubuntu", "ui-sans-serif", "system-ui", "sans-serif";
 }
 
