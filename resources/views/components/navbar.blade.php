@@ -1,4 +1,4 @@
-<nav class="sticky top-0 w-full z-50 bg-teal/10 backdrop-blur-sm transition-all duration-300 shadow-lg" x-data="{ isOpen: false }">
+<nav class="sticky top-0 z-50 bg-teal/10 backdrop-blur-sm transition-all duration-300 shadow-lg " x-data="{ isOpen: false }">
     
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
         
