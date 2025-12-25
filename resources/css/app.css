@@ -6,17 +6,10 @@
 @source '../**/*.js';
 
 @theme {
-  --color-olive-50: #F5F6EF;
-  --color-olive-100: #EBECDF;
-  --color-olive-200: #D7D9BF;
-  --color-olive-300: #C3C69F;
-  --color-olive-400: #AFB47E;
-  --color-olive-500: #9BA15E;
-  --color-olive-600: #7C814B;
-  --color-olive-700: #5D6039;
-  --color-olive-800: #3E4026;
-  --color-olive-900: #1F2013;
-  --color-olive-950: #16160D;
+  --color-dark: #051114;
+  --color-teal: #0F2C35;
+  --color-orange: #FF9F1C;
+  --color-light: #E0E6E6;
 
   --font-ubuntu: "Ubuntu", sans-serif;
   --font-sans: "Ubuntu", "ui-sans-serif", "system-ui", "sans-serif";
