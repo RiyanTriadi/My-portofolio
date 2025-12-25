@@ -1,42 +1,46 @@
-<nav class="fixed top-0 z-40 flex w-screen justify-center bg-transparent shadow-sm">
-    <div class="navbar container mx-auto w-[95%]">
+<nav class="fixed w-full z-50 bg-teal/10 backdrop-blur-sm transition-all duration-300 shadow-lg" x-data="{ isOpen: false }">
+    
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        
+        <h1 class="font-black text-xl tracking-wider">
+            <a href="#home" class="text-orange">RIYAN</a>
+            <a href="#home">TRIADI</a>
+        </h1>
 
-        <div class="flex-1">
-            <a class="text-xl font-black text-olive-50" href="#home">RIYAN TRIADI</a>
+        <div class="hidden md:flex items-center space-x-2">
+            <a href="#home" class="px-4 py-2 rounded-lg hover:text-orange transition duration-300">Home</a>
+            <a href="#about" class="px-4 py-2 rounded-lg hover:text-orange transition duration-300">About me</a>
+            <a href="#projects" class="px-4 py-2 rounded-lg hover:text-orange transition duration-300">Projects</a>
+            <a href="#contact" class="px-4 py-2 rounded-lg hover:text-orange transition duration-300">
+                Contact
+            </a>
         </div>
 
-        <div class="hidden flex-none md:flex">
-            <ul class="menu menu-horizontal [--menu-active-bg:var(--color-olive-800)] [--menu-active-fg:var(--color-olive-50)] px-1 font-medium text-olive-50">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 fill-current text-azure-100" viewBox="0 0 24 24">
+                <path d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18H4zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13H4zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8H4z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div x-show="isOpen" 
+        @click.away="isOpen = false"
+
+        x-transition:enter="transition ease-in-out duration-400"
+        x-transition:enter-start="opacity-0 -translate-y-5"
+        x-transition:enter-end="opacity-100 translate-y-0"
+
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100 translate-y-0"
+        x-transition:leave-end="opacity-0 -translate-y-5"
+
+        class="md:hidden absolute top-full left-0 w-full bg-teal/20 backdrop-blur-md">
+        
+        <div class="flex justify-center py-4 text-sm gap-4">
+            <a href="#home" class="block py-2 px-3 rounded-full border border-orange hover:bg-orange hover:text-dark transition">Home</a>
+            <a href="#about" class="block py-2 px-3 rounded-full border border-orange hover:bg-orange hover:text-dark transition">About me</a>
+            <a href="#projects" class="block py-2 px-3 rounded-full border border-orange hover:bg-orange hover:text-dark transition">Projects</a>
+            <a href="#contact" class="block py-2 px-3 rounded-full border border-orange hover:bg-orange hover:text-dark transition">Contact</a>
         </div>
-
-        <div class="flex-none md:hidden">
-            <div class="dropdown dropdown-end">
-
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-transparent border-none shadow-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-olive-50" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h7" />
-                    </svg>
-                </div>
-
-                <ul tabindex="0"
-                    class="menu menu-md [--menu-active-bg:var(--color-olive-800)] [--menu-active-fg:var(--color-olive-50)] dropdown-content bg-olive-600 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-
-            </div>
-        </div>
-
     </div>
 </nav>
