@@ -11,14 +11,17 @@
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
     @vite('resources/css/app.css')
 </head>
 
-<body class="text-olive-800 bg-olive-100">
+<body class="text-light bg-teal">
     @include('components.navbar')
     <main>
         @yield('content')
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
