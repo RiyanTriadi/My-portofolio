@@ -5,7 +5,7 @@
 
     <div class="absolute inset-0 bg-black/30"></div>
 
-    <div class="relative z-10 max-w-300 w-[80%] lg:w-full h-screen m-auto flex flex-col items-center justify-center gap-6 text-azure-50 text-shadow-md">
+    <div class="relative z-10 max-w-300 w-[80%] lg:w-full h-screen m-auto flex flex-col items-center justify-center gap-4 text-azure-50 text-shadow-md">
         
         <h1 class="text-4xl md:text-6xl font-semibold">HELLO! I'M RIYAN TRIADI</h1>
         
