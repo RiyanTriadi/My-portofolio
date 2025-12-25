@@ -1,8 +1,8 @@
-<section id="home" class="w-screen relative text-center bg-cover bg-center" style="background-image: url('img/green-and-white-light-streaks.jpg')">
+<section id="home" class="w-full relative text-center bg-cover bg-center" style="background-image: url('img/green-and-white-light-streaks.jpg')">
 
     <div class="absolute inset-0 bg-black/30"></div>
 
-    <div class="relative z-10 max-w-300 px-12 py-12 lg:w-full m-auto flex flex-col items-center justify-center gap-4 text-azure-50 text-shadow-md">
+    <div class="relative z-10 max-w-300 px-12 py-24 md:py-40 lg:py-64 m-auto flex flex-col items-center justify-center gap-5 md:gap-6 text-azure-50 text-shadow-md">
         
         <h1 class="text-4xl md:text-6xl font-semibold">HELLO! I'M RIYAN TRIADI</h1>
         
